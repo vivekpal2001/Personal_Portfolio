@@ -16,8 +16,11 @@ body{
 
 h1,h2,h5,p{
     margin: 0;
+    
 }
-
+p{
+    margin-bottom: 1rem;
+}
 /* 1rem = 16px */
 
 .icon{
@@ -65,6 +68,7 @@ h1,h2,h5,p{
     grid-template-columns: 1fr 1fr;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 
 #grid__tl__btn,
@@ -86,6 +90,17 @@ h1,h2,h5,p{
     z-index: 100;
     border-radius: 40%;
     transition: transform 0.2 ease-in-out ;
+}
+
+#grid__tl__content,
+#grid__tr__content,
+#grid__bl__content,
+#grid__br__content
+{
+    position: absolute;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: var(--text-alt);
 }
 
 #grid__tl__btn,
@@ -165,3 +180,68 @@ article p{
     text-align: left;
     margin: 0 1rem;
 }
+
+/* top-right-corner */
+
+#grid__tr__btn{
+    top: -11.5rem;
+    right: -11.5rem;
+    transform: rotate(45deg);
+}
+
+#grid__tr__content{
+    width: 30vw;
+    top: 10vh;
+    right: 0;
+    transform: translateX(100vw) translateY(-100vh);
+}
+
+.experience{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.experience__skill{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1.2rem;
+    gap: 0.2rem;
+    margin: 0;
+}
+
+.experience__skill div{
+    display: flex;
+    align-items: center;
+    width: 13.5rem;
+}
+
+.experience__skill div img{
+    padding: 0;
+    margin-right: 0.5rem;
+}
+
+.experience__skill div h2{
+    text-align: left;
+}
+
+.experience__skill div p{
+    padding: 0;
+    margin: 0;
+}
+
+.experience__skill div h2,
+.experience__skill div p{
+    font-size: 0.8rem;
+}
+
+.experience__skill div div{
+    justify-content: space-between;
+}
+
+/* botom-left-corner */
+
+
+/* bottom-right-corner */
