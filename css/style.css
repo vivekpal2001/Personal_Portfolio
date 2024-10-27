@@ -273,6 +273,10 @@ article p{
     height: 240px;
 }
 
+.p-3{
+    width: 240px;
+}
+
 .project__title{
     width: 100%;
     margin: 0;
